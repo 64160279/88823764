@@ -24,9 +24,38 @@
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">หญิง</label>
     </form>
+    <form> 
+        <label for="myfile">รูป</label>
+        <input type="file" id="myfile" name="myfile">
+    </form>
     <form>
         <label for="address">ที่อยู่</label>
         <textarea id="address" rows="4" cols="40"></textarea>
     </form>
-
+    <form>
+        <label for="color">สีที่ชอบ</label>
+        <select id="color" name="color" size="1">
+            <option value="red">สีแดง</option>
+            <option value="green">สีเขียว</option>
+            <option value="blue">สีน้ำเงิน</option>
+        </select>
+    </form>
+    <form>
+        <label for="song">เพลงที่ชอบ</label>
+        <input type="checkbox" id="song1" name="song1" value="เพื่อชีวิต">
+        <label for="song1">เพื่อชีวิต</label>
+        <input type="checkbox" id="song2" name="song2" value="ลูกทุ่ง">
+        <label for="song2">ลูกทุ่ง</label>
+        <input type="checkbox" id="other" name="other" value="other">
+        <label for="other">อื่นๆ</label>
+    </form>
+    <br>
+    <form>
+        <input type="checkbox" id="data" name="data" value="data">
+        <label for="data">ยินยอมให้เก็บข้อมูล</label>
+    </form>
+    <br>
+    <br>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
 </html>
