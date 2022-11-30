@@ -1,23 +1,14 @@
-<button onclick="showContent()">Show hidden content</button><br/>
-
-<template>
-  <h>ข้อมูลด้านการศึกษา</h>
-  <p><img src="me.jpg" width="281" height="301"></p><br/>
-  <p1>รหัสประจำตัว:	64160279 </p1><br/>
-  <p2>ชื่อ:	นายพงศ์เพชร วีรพันธุ์ </p2><br/>
-  <p3>คณะ:	คณะวิทยาการสารสนเทศ </p3><br/>
-  <p4>วิทยาเขต:	บางแสน </p4><br/>
-  <p5>หลักสูตร:	2115026 วท.บ. (วิศวกรรมซอฟต์แวร์) ปรับปรุง 64 - ป.ตรี 4 ปี ปกติ </p5><br/>
-  <p6>ระดับการศึกษา:	ปริญญาตรี </p6><br/>
-  <p7>ชื่อปริญญา:	วิทยาศาสตรบัณฑิต วท.บ. (วิศวกรรมซอฟต์แวร์) ปรับปรุง 64 - ป.ตรี 4 ปี ปกติ </p7><br/>
-  <p8>ปีการศึกษาที่เข้า:	2564 / 1 วันที่ 10/6/2564 </p8><br/>
-  <p9>วิธีรับเข้า:	Admission กลาง </p9><br/>
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
+<button title="Click to Show/Hide Content" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide</button>
+<div id="spoiler" style="display:none">
+    <h>ข้อมูลด้านการศึกษา</h>
+    <p><img src="me.jpg" width="281" height="301"></p><br/>
+    <p1>รหัสประจำตัว:	64160279 </p1><br/>
+    <p2>ชื่อ:	นายพงศ์เพชร วีรพันธุ์ </p2><br/>
+    <p3>คณะ:	คณะวิทยาการสารสนเทศ </p3><br/>
+    <p4>วิทยาเขต:	บางแสน </p4><br/>
+    <p5>หลักสูตร:	2115026 วท.บ. (วิศวกรรมซอฟต์แวร์) ปรับปรุง 64 - ป.ตรี 4 ปี ปกติ </p5><br/>
+    <p6>ระดับการศึกษา:	ปริญญาตรี </p6><br/>
+    <p7>ชื่อปริญญา:	วิทยาศาสตรบัณฑิต วท.บ. (วิศวกรรมซอฟต์แวร์) ปรับปรุง 64 - ป.ตรี 4 ปี ปกติ </p7><br/>
+    <p8>ปีการศึกษาที่เข้า:	2564 / 1 วันที่ 10/6/2564 </p8><br/>
+    <p9>วิธีรับเข้า:	Admission กลาง </p9><br/>
+</div>
